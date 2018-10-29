@@ -21,9 +21,8 @@ div.row {
 }
 
 .row {
-    display: table;
     content: "";
-    clear: both;
+    overflow: auto;
 }
 
 /* Grid Columns Styles */

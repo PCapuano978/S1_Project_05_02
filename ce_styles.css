@@ -31,7 +31,6 @@ body {
 img {
     display: block;
     width: 100%;
-    float: left;
 }
 
 nav a {
@@ -49,7 +48,7 @@ body header nav ul {
     display: block;
     float: left;
     margin-right: 20px;
-    padding: 10px 0px; 
+    padding: 10px 0px 10px 0px; 
 }
 
 body header nav a:visited {
@@ -68,7 +67,7 @@ div#container {
     padding-right: 8px;
 }
 
-div.cell {
+div a.cell {
     display: block;
     width: 100%;
     padding-left: 8px;
