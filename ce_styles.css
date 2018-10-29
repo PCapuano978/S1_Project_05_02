@@ -52,7 +52,6 @@ body::after {
 img {
     display: block;
     width: 100%;
-    float: left;
 }
 
 /* All images in the document are given a display style of "block", a 100% usage of width, and are floated to the left. */
