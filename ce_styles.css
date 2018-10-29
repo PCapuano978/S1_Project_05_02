@@ -15,8 +15,11 @@
 /* Window and Body Styles */
 
 html {
-    background-color: rgb(101,101,101);
+    background-color: rgb(101, 101, 101);
 }
+
+/* The style rule here sets the background color of the browser space to an rbg value of "101,101,101), which is a shade
+of gray. */
 
 body {
     background-color: white;
@@ -28,38 +31,71 @@ body {
     position: relative;
 }
 
+/* Right here in the body tags...
+1. The background color is set to white.
+2. Font families are prorities for the text in order of "Verdana, Geneva, Arial", and "sans-serif".
+3. Vertical matgin space is set to 20 pixels, while horizontal spaces are automatic.
+4. Width is set to take up 95% of the space provided.
+5. Minimum width possible is set to 320 pixels.
+6. Maximum width possible is set to 960 pixels.
+7. Position of all the elements is set to relative to make the document more flexiable with its layout.
+ */
+
+body::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* There is a container collopase fail-safe put here after the body to enable all content fits in the space appropriatly.  */
+
 img {
     display: block;
     width: 100%;
     float: left;
 }
 
+/* All images in the document are given a display style of "block", a 100% usage of width, and are floated to the left. */
+
 nav a {
     text-decoration: none;
 }
+
+/* All hyperlinks in the nav have their text decoration removed; in this case being their underline.  */
 
 /* Body Header Styles */
 
 body header {
     background-color: rgb(191, 68, 70);
-    height: 40px; 
+    height: 40px;
 }
 
-body header nav ul {
+/* The background color of the header within the body is set to a shade of red that has the rgb value of "191, 68, 70"
+and the hight is set to 40 pixels. */
+
+body header nav li {
     display: block;
     float: left;
     margin-right: 20px;
-    padding: 10px 0px; 
+    padding: 10px 0px;
 }
+
+/* List items within the header nav are given a display of "block", floated to the left, have a right margin with the 
+width of 20 pixels, and padding that has no horizontal measurement, but vertical length of 10 pixels. */
 
 body header nav a:visited {
     font-size: 0.9em;
     color: rgb(51, 51, 51);
-    }
-    
-    body header nav a:hover {
+}
+
+/* All links in the header navigation tab wether they have been visisted or not are given 0.9em as their font-size and
+    a color of black that is a rgb of "51, 51, 51". */
+
+body header nav a:hover {
     color: rgb(255, 211, 211);
-    }
+}
+
+/* All nav hyperlinks in the header when hovered over by the mouse cursor have their color set to "255, 211, 211".  */
 
 /* DIV Container Styles */
 
@@ -68,16 +104,20 @@ div#container {
     padding-right: 8px;
 }
 
+/* All divs with an ID of "container" have a bottom and right padding of 8 pixels. */
+
 div.cell {
-    display: block;
     width: 100%;
     padding-left: 8px;
     padding-top: 8px;
 }
 
+/* All divs with a class of "cell" have 100% width ussage and both a left and top padding of 8 pixels. */
+
 /* Footer Styles */
 
 footer {
+    clear: both;
     position: absolute;
     right: 8px;
     bottom: 8px;
@@ -85,3 +125,13 @@ footer {
     text-align: right;
     font-size: 2vmin;
 }
+
+/* The footer is given...
+1. Both sides cleared of floating.
+2. A position of absolute with its measurements.
+3. A right length of 8 pixels.
+4. A bottom length of 8 pixels.
+5. Color that is an rbg value of "143, 33, 36", that ressembles a shade of red.
+6. Text alignment to the right side.
+7. A font size of 2 with the units of "vmin"
+*/
